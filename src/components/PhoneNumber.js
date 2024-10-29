@@ -7,7 +7,7 @@ function PhoneNumber() {
 
     return (
         <div className="flex items-center">
-            <FontAwesomeIcon icon={faPhone} className="mr-2 text-primary" />
+            <FontAwesomeIcon icon={faPhone} className="mr-2 text-white" />
             <a href={`tel:${phoneNumber}`} className="link text-white hover:text-primary">
                 {phoneNumber}
             </a>
