@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
+
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -26,23 +27,23 @@ function Navbar() {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a href="#services">Услуги</a></li>
-                        <li><a href="#adv">Преимущества</a></li>
-                        <li><a href="#footer">Контакты</a></li>
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Inko</a>
+                <a href="/" className="btn btn-ghost text-xl">daisyUI</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#adv">Преимущества</a></li>
-                    <li><a href="#footer">Контакты</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <div className='flex items-center'>
                     <FontAwesomeIcon className='mr-2' icon={faPhone} />
-                    <a className="link">8(700)961-96-63</a>
+                    <a href="tel:87009619663" className="link">8(700)961-96-63</a>
                 </div>
             </div>
         </div>
