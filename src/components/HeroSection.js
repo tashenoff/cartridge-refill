@@ -1,10 +1,11 @@
 import React from 'react';
+import ScrollArrow from './ScrollArrow';
 
 function HeroSection() {
     return (
-        <div id="home" className="hero h-[600px] bg-base-200"
+        <div id="home" className="hero relative h-[600px] bg-base-200"
             style={{
-                backgroundImage: "url(/images/home.jpg)",
+                backgroundImage: "url(/images/home.jpeg)",
             }}>
             <div className="hero-overlay bg-black bg-opacity-80"></div>
             <div className="hero-content text-center">
@@ -14,6 +15,7 @@ function HeroSection() {
                     <button className="btn btn-primary">написать специалисту</button>
                 </div>
             </div>
+            <ScrollArrow className='bottom-16 absolute animate-bounce' direction="down" targetId="services" />
         </div>
     );
 }

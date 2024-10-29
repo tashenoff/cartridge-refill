@@ -1,13 +1,23 @@
 // src/components/Navbar.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <div className="navbar bg-base-100">
-            <div className="container mx-auto"> {/* Добавляем контейнер */}
+        <div className={`navbar ${isScrolled ? 'bg-opacity-70 backdrop-blur-md shadow-md' : 'bg-transparent'} fixed border-b border-white border-opacity-15 top-0 w-full z-50 transition-all duration-300`}>
+            <div className="container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,19 +38,19 @@ function Navbar() {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><a href="#services">Услуги</a></li>
-                            <li><a href="#advantages">Преимущества</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a href="#adv">Преимущества</a></li>
+                            <li><a href="#footer">Контакты</a></li>
                         </ul>
                     </div>
                     <a href="/" className="btn btn-ghost text-xl">
-                    <img src="/images/logo.svg" alt="Логотип" className="lg:h-8 h-5 w-auto" />
+                        <img src="/images/logo.svg" alt="Логотип" className="lg:h-8 h-5 w-auto" />
                     </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><a href="#services">Услуги</a></li>
-                        <li><a href="#advantages">Преимущества</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#adv">Преимущества</a></li>
+                        <li><a href="#footer">Контакты</a></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

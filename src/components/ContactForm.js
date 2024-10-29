@@ -6,7 +6,7 @@ function ContactForm() {
     return (
         <div id="footer" className="hero bg-base-100 h-[380px]"
             style={{
-                backgroundImage: "url(/images/baner-bot.jpg)",
+                backgroundImage: "url(/images/baner-bot.jpeg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
