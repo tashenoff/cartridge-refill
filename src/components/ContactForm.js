@@ -6,7 +6,9 @@ function ContactForm() {
     return (
         <div id="footer" className="hero bg-base-100 h-[380px]"
             style={{
-                backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+                backgroundImage: "url(/images/baner-bot.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
             }}
         >
             <div className="hero-overlay bg-black bg-opacity-80"></div>

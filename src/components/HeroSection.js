@@ -4,7 +4,7 @@ function HeroSection() {
     return (
         <div id="home" className="hero h-[600px] bg-base-200"
             style={{
-                backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+                backgroundImage: "url(/images/home.jpg)",
             }}>
             <div className="hero-overlay bg-black bg-opacity-80"></div>
             <div className="hero-content text-center">
