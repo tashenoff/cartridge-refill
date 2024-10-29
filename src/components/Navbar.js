@@ -1,7 +1,6 @@
 // src/components/Navbar.js
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import PhoneNumber from './PhoneNumber'; // Импортируем компонент PhoneNumber
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -55,8 +54,7 @@ function Navbar() {
                 </div>
                 <div className="navbar-end">
                     <div className='flex items-center justify-end'>
-                        <FontAwesomeIcon className='mr-2' icon={faPhone} />
-                        <a href="tel:87009619663" className="link">8(700)961-96-63</a>
+                        <PhoneNumber />
                     </div>
                 </div>
             </div>

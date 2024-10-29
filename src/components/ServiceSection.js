@@ -1,4 +1,5 @@
 import React from 'react';
+import WhatsAppButton from './WhatsAppButton'; // Импортируем компонент WhatsAppButton
 
 function ServiceSection() {
     const services = [
@@ -36,7 +37,7 @@ function ServiceSection() {
                                 />
                                 <h3 className="text-xl font-semibold">{service.name}</h3>
                                 <p className="mt-2">{service.description}</p> {/* Описание услуги */}
-                                <button className="btn btn-primary mt-4">Заказать</button>
+                                <WhatsAppButton />
                             </div>
                         ))}
                     </div>

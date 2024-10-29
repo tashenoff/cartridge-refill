@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollArrow from './ScrollArrow';
+import WhatsAppButton from './WhatsAppButton'; // Импортируем компонент WhatsAppButton
+
 
 function HeroSection() {
     return (
@@ -12,7 +14,7 @@ function HeroSection() {
                 <div className="w-full">
                     <h1 className="text-5xl font-bold">Заправка картриджей</h1>
                     <p className="py-6">Быстрая и качественная заправка картриджей для принтеров любых моделей.</p>
-                    <button className="btn btn-primary">написать специалисту</button>
+                    <WhatsAppButton />
                 </div>
             </div>
             <ScrollArrow className='bottom-16 absolute animate-bounce' direction="down" targetId="services" />

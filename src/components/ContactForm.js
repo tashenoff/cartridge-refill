@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'; // Импортируем нужную иконку
+import WhatsAppButton from './WhatsAppButton'; // Импортируем компонент WhatsAppButton
 
 function ContactForm() {
     return (
@@ -19,7 +20,7 @@ function ContactForm() {
                     </div>
                     <h2 className="text-3xl font-bold text-center mb-6">Оставить заявку</h2>
                     <h3 className="text-xl text-center text-white mb-4">Мы свяжемся с вами в ближайшее время</h3>
-                    <button type="submit" className="btn btn-primary ">Написать в WhatsApp</button>
+                    <WhatsAppButton />
                 </div>
             </div>
         </div>
