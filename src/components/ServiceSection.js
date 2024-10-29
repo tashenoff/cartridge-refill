@@ -4,15 +4,18 @@ function ServiceSection() {
     const services = [
         {
             name: "Лазерные картриджи",
-            image: "/images/s1.png" // Путь к изображению
+            image: "/images/s1.png", // Путь к изображению
+            description: "Профессиональная заправка и восстановление черно-белых лазерных картриджей для принтеров различных марок."
         },
         {
             name: "Цветные лазерные картриджи",
-            image: "/images/s1.png"
+            image: "/images/s1.png",
+            description: "Качественная заправка цветных лазерных картриджей с гарантией на все виды работ и расходных материалов."
         },
         {
             name: "Тонер-картриджи",
-            image: "/images/s1.png"
+            image: "/images/s1.png",
+            description: "Заправка и восстановление тонер-картриджей для лазерных принтеров с использованием высококачественных тонеров."
         },
     ];
 
@@ -22,13 +25,14 @@ function ServiceSection() {
                 <h2 className="text-3xl font-bold text-center mb-6">Наши услуги</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {services.map((service, index) => (
-                        <div key={index} className="card bg-base-100 shadow-md p-4">
+                        <div key={index} className="card bg-base-200 border-base-100 border shadow-md p-4">
                             <img
                                 src={service.image}
                                 alt={service.name}
                                 className="h-60 w-full object-cover mb-4 rounded-lg"
                             />
                             <h3 className="text-xl font-semibold">{service.name}</h3>
+                            <p className="text-gray-600 mt-2">{service.description}</p> {/* Описание услуги */}
                             <button className="btn btn-primary mt-4">Заказать</button>
                         </div>
                     ))}
