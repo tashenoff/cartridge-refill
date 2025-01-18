@@ -2,7 +2,6 @@ import './App.css';
 import React, { useEffect } from 'react'; // Импортируем useEffect
 import TagManager from 'react-gtm-module'; // Импортируем TagManager
 import HeroSection from './components/HeroSection';
-import AdvantagesSection from './components/AdvantagesSection';
 import ServiceSection from './components/ServiceSection';
 import ContactForm from './components/ContactForm';
 import Layout from './components/Layout';
