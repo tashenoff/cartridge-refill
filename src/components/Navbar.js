@@ -42,7 +42,7 @@ function Navbar() {
                         </ul>
                     </div>
                     <a href="/" className="btn btn-ghost text-xl">
-                        PrintCompany
+                        Printex
                     </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
