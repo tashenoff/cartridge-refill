@@ -1,7 +1,7 @@
 import React from 'react';
 
 function WhatsAppButton() {
-    const whatsappNumber = "+77009619663"; // Определяем переменную с номером телефона для WhatsApp
+    const whatsappNumber = "+77755081197"; // Определяем переменную с номером телефона для WhatsApp
 
     const handleClick = () => {
         const message = "Здравствуйте!"; // Сообщение по умолчанию, которое будет отправлено
@@ -12,7 +12,7 @@ function WhatsAppButton() {
     return (
         <button 
             onClick={handleClick}
-            className="btn btn-success mt-4"
+            className="btn btn-accent mt-4"
         >
             Связаться в WhatsApp
         </button>

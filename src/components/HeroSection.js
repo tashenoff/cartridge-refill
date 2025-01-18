@@ -7,7 +7,7 @@ function HeroSection() {
     return (
         <div id="home" className="hero relative h-[600px] bg-base-200"
             style={{
-                backgroundImage: "url(/images/home.jpeg)",
+                backgroundImage: "url(https://kz.resursplus.com/wp-content/uploads/2018/07/usl2-1.jpg)",
             }}>
             <div className="hero-overlay bg-black bg-opacity-80"></div>
             <div className="hero-content text-center">
